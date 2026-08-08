@@ -1,6 +1,6 @@
 {
   "brand": "Lumenred",
-  "generatedAt": "2026-08-08T14:55:38.723Z",
+  "generatedAt": "2026-08-08T15:11:33.259Z",
   "collections": [
     {
       "handle": "full-body-panels",
@@ -69,7 +69,8 @@
       ],
       "inStock": true,
       "imageTone": 37,
-      "image": "/products/lumenred-forge-s-full-body-panel-1.webp"
+      "image": "/products/lumenred-forge-s-full-body-panel-1.webp",
+      "imageSource": "ref-panel-steel.png"
     },
     {
       "id": "lr-002",
@@ -96,7 +97,8 @@
       ],
       "inStock": true,
       "imageTone": 74,
-      "image": "/products/lumenred-pulse-m-full-body-panel-2.webp"
+      "image": "/products/lumenred-pulse-m-full-body-panel-2.webp",
+      "imageSource": "ref-panel-white.png"
     },
     {
       "id": "lr-003",
@@ -123,7 +125,8 @@
       ],
       "inStock": true,
       "imageTone": 111,
-      "image": "/products/lumenred-aura-l-full-body-panel-3.webp"
+      "image": "/products/lumenred-aura-l-full-body-panel-3.webp",
+      "imageSource": "ref-panel-steel.png"
     },
     {
       "id": "lr-004",
@@ -150,7 +153,8 @@
       ],
       "inStock": true,
       "imageTone": 148,
-      "image": "/products/lumenred-vertex-xl-full-body-panel-4.webp"
+      "image": "/products/lumenred-vertex-xl-full-body-panel-4.webp",
+      "imageSource": "photo-panel-wall.png"
     },
     {
       "id": "lr-005",
@@ -177,7 +181,8 @@
       ],
       "inStock": true,
       "imageTone": 185,
-      "image": "/products/lumenred-halo-pro-full-body-panel-5.webp"
+      "image": "/products/lumenred-halo-pro-full-body-panel-5.webp",
+      "imageSource": "photo-panel-clinic.png"
     },
     {
       "id": "lr-006",
@@ -204,7 +209,8 @@
       ],
       "inStock": true,
       "imageTone": 222,
-      "image": "/products/lumenred-stride-s-full-body-panel-6.webp"
+      "image": "/products/lumenred-stride-s-full-body-panel-6.webp",
+      "imageSource": "photo-panel-loft.png"
     },
     {
       "id": "lr-007",
@@ -231,7 +237,8 @@
       ],
       "inStock": true,
       "imageTone": 259,
-      "image": "/products/lumenred-nova-m-full-body-panel-7.webp"
+      "image": "/products/lumenred-nova-m-full-body-panel-7.webp",
+      "imageSource": "photo-ceiling-panel.png"
     },
     {
       "id": "lr-008",
@@ -258,7 +265,8 @@
       ],
       "inStock": true,
       "imageTone": 296,
-      "image": "/products/lumenred-ridge-l-full-body-panel-8.webp"
+      "image": "/products/lumenred-ridge-l-full-body-panel-8.webp",
+      "imageSource": "photo-dual-panel.png"
     },
     {
       "id": "lr-009",
@@ -285,7 +293,8 @@
       ],
       "inStock": true,
       "imageTone": 333,
-      "image": "/products/lumenred-solace-xl-full-body-panel-9.webp"
+      "image": "/products/lumenred-solace-xl-full-body-panel-9.webp",
+      "imageSource": "photo-clinic-system.png"
     },
     {
       "id": "lr-010",
@@ -312,7 +321,8 @@
       ],
       "inStock": true,
       "imageTone": 10,
-      "image": "/products/lumenred-axiom-pro-full-body-panel-10.webp"
+      "image": "/products/lumenred-axiom-pro-full-body-panel-10.webp",
+      "imageSource": "photo-panel-door.png"
     },
     {
       "id": "lr-011",
@@ -339,7 +349,8 @@
       ],
       "inStock": true,
       "imageTone": 47,
-      "image": "/products/lumenred-ember-s-full-body-panel-11.webp"
+      "image": "/products/lumenred-ember-s-full-body-panel-11.webp",
+      "imageSource": "photo-panel-cyclo.png"
     },
     {
       "id": "lr-012",
@@ -366,7 +377,8 @@
       ],
       "inStock": true,
       "imageTone": 84,
-      "image": "/products/lumenred-lattice-m-full-body-panel-12.webp"
+      "image": "/products/lumenred-lattice-m-full-body-panel-12.webp",
+      "imageSource": "photo-panel-easel.png"
     },
     {
       "id": "lr-013",
@@ -393,7 +405,8 @@
       ],
       "inStock": true,
       "imageTone": 121,
-      "image": "/products/lumenred-forge-l-full-body-panel-13.webp"
+      "image": "/products/lumenred-forge-l-full-body-panel-13.webp",
+      "imageSource": "ref-panel-steel.png"
     },
     {
       "id": "lr-014",
@@ -420,7 +433,8 @@
       ],
       "inStock": true,
       "imageTone": 158,
-      "image": "/products/lumenred-pulse-xl-full-body-panel-14.webp"
+      "image": "/products/lumenred-pulse-xl-full-body-panel-14.webp",
+      "imageSource": "ref-panel-white.png"
     },
     {
       "id": "lr-015",
@@ -447,7 +461,8 @@
       ],
       "inStock": true,
       "imageTone": 195,
-      "image": "/products/lumenred-aura-pro-full-body-panel-15.webp"
+      "image": "/products/lumenred-aura-pro-full-body-panel-15.webp",
+      "imageSource": "ref-panel-steel.png"
     },
     {
       "id": "lr-016",
@@ -474,7 +489,8 @@
       ],
       "inStock": true,
       "imageTone": 232,
-      "image": "/products/lumenred-vertex-s-full-body-panel-16.webp"
+      "image": "/products/lumenred-vertex-s-full-body-panel-16.webp",
+      "imageSource": "photo-panel-wall.png"
     },
     {
       "id": "lr-017",
@@ -501,7 +517,8 @@
       ],
       "inStock": true,
       "imageTone": 269,
-      "image": "/products/lumenred-halo-m-full-body-panel-17.webp"
+      "image": "/products/lumenred-halo-m-full-body-panel-17.webp",
+      "imageSource": "photo-panel-clinic.png"
     },
     {
       "id": "lr-018",
@@ -528,7 +545,8 @@
       ],
       "inStock": true,
       "imageTone": 306,
-      "image": "/products/lumenred-stride-l-full-body-panel-18.webp"
+      "image": "/products/lumenred-stride-l-full-body-panel-18.webp",
+      "imageSource": "photo-panel-loft.png"
     },
     {
       "id": "lr-019",
@@ -555,7 +573,8 @@
       ],
       "inStock": true,
       "imageTone": 343,
-      "image": "/products/lumenred-nova-xl-full-body-panel-19.webp"
+      "image": "/products/lumenred-nova-xl-full-body-panel-19.webp",
+      "imageSource": "photo-ceiling-panel.png"
     },
     {
       "id": "lr-020",
@@ -582,7 +601,8 @@
       ],
       "inStock": true,
       "imageTone": 20,
-      "image": "/products/lumenred-ridge-pro-full-body-panel-20.webp"
+      "image": "/products/lumenred-ridge-pro-full-body-panel-20.webp",
+      "imageSource": "photo-dual-panel.png"
     },
     {
       "id": "lr-021",
@@ -609,7 +629,8 @@
       ],
       "inStock": true,
       "imageTone": 57,
-      "image": "/products/lumenred-vertex-desk-panel-1.webp"
+      "image": "/products/lumenred-vertex-desk-panel-1.webp",
+      "imageSource": "ref-desktop-panel.png"
     },
     {
       "id": "lr-022",
@@ -636,7 +657,8 @@
       ],
       "inStock": true,
       "imageTone": 94,
-      "image": "/products/lumenred-halo-desk-panel-2.webp"
+      "image": "/products/lumenred-halo-desk-panel-2.webp",
+      "imageSource": "photo-desk-lamp.png"
     },
     {
       "id": "lr-023",
@@ -663,7 +685,8 @@
       ],
       "inStock": true,
       "imageTone": 131,
-      "image": "/products/lumenred-stride-desk-panel-3.webp"
+      "image": "/products/lumenred-stride-desk-panel-3.webp",
+      "imageSource": "photo-desk-lamp.png"
     },
     {
       "id": "lr-024",
@@ -690,7 +713,8 @@
       ],
       "inStock": true,
       "imageTone": 168,
-      "image": "/products/lumenred-nova-desk-panel-4.webp"
+      "image": "/products/lumenred-nova-desk-panel-4.webp",
+      "imageSource": "ref-panel-white.png"
     },
     {
       "id": "lr-025",
@@ -717,7 +741,8 @@
       ],
       "inStock": true,
       "imageTone": 205,
-      "image": "/products/lumenred-ridge-desk-panel-5.webp"
+      "image": "/products/lumenred-ridge-desk-panel-5.webp",
+      "imageSource": "photo-panel-easel.png"
     },
     {
       "id": "lr-026",
@@ -744,7 +769,8 @@
       ],
       "inStock": true,
       "imageTone": 242,
-      "image": "/products/lumenred-solace-desk-panel-6.webp"
+      "image": "/products/lumenred-solace-desk-panel-6.webp",
+      "imageSource": "ref-desktop-panel.png"
     },
     {
       "id": "lr-027",
@@ -771,7 +797,8 @@
       ],
       "inStock": true,
       "imageTone": 279,
-      "image": "/products/lumenred-axiom-desk-panel-7.webp"
+      "image": "/products/lumenred-axiom-desk-panel-7.webp",
+      "imageSource": "ref-desktop-panel.png"
     },
     {
       "id": "lr-028",
@@ -798,7 +825,8 @@
       ],
       "inStock": true,
       "imageTone": 316,
-      "image": "/products/lumenred-ember-desk-panel-8.webp"
+      "image": "/products/lumenred-ember-desk-panel-8.webp",
+      "imageSource": "photo-nightstand-panel.png"
     },
     {
       "id": "lr-029",
@@ -825,7 +853,8 @@
       ],
       "inStock": true,
       "imageTone": 353,
-      "image": "/products/lumenred-lattice-desk-panel-9.webp"
+      "image": "/products/lumenred-lattice-desk-panel-9.webp",
+      "imageSource": "ref-panel-white.png"
     },
     {
       "id": "lr-030",
@@ -852,7 +881,8 @@
       ],
       "inStock": true,
       "imageTone": 30,
-      "image": "/products/lumenred-forge-desk-panel-10.webp"
+      "image": "/products/lumenred-forge-desk-panel-10.webp",
+      "imageSource": "photo-panel-easel.png"
     },
     {
       "id": "lr-031",
@@ -879,7 +909,8 @@
       ],
       "inStock": true,
       "imageTone": 67,
-      "image": "/products/lumenred-pulse-desk-panel-11.webp"
+      "image": "/products/lumenred-pulse-desk-panel-11.webp",
+      "imageSource": "ref-panel-white.png"
     },
     {
       "id": "lr-032",
@@ -906,7 +937,8 @@
       ],
       "inStock": true,
       "imageTone": 104,
-      "image": "/products/lumenred-aura-desk-panel-12.webp"
+      "image": "/products/lumenred-aura-desk-panel-12.webp",
+      "imageSource": "photo-desk-lamp.png"
     },
     {
       "id": "lr-033",
@@ -933,7 +965,8 @@
       ],
       "inStock": true,
       "imageTone": 141,
-      "image": "/products/lumenred-vertex-desk-panel-13.webp"
+      "image": "/products/lumenred-vertex-desk-panel-13.webp",
+      "imageSource": "photo-nightstand-panel.png"
     },
     {
       "id": "lr-034",
@@ -960,7 +993,8 @@
       ],
       "inStock": true,
       "imageTone": 178,
-      "image": "/products/lumenred-halo-desk-panel-14.webp"
+      "image": "/products/lumenred-halo-desk-panel-14.webp",
+      "imageSource": "ref-panel-white.png"
     },
     {
       "id": "lr-035",
@@ -987,7 +1021,8 @@
       ],
       "inStock": true,
       "imageTone": 215,
-      "image": "/products/lumenred-stride-desk-panel-15.webp"
+      "image": "/products/lumenred-stride-desk-panel-15.webp",
+      "imageSource": "photo-panel-easel.png"
     },
     {
       "id": "lr-036",
@@ -1014,7 +1049,8 @@
       ],
       "inStock": true,
       "imageTone": 252,
-      "image": "/products/lumenred-pulse-face-mask-1.webp"
+      "image": "/products/lumenred-pulse-face-mask-1.webp",
+      "imageSource": "ref-face-mask.png"
     },
     {
       "id": "lr-037",
@@ -1041,7 +1077,8 @@
       ],
       "inStock": true,
       "imageTone": 289,
-      "image": "/products/lumenred-aura-face-mask-2.webp"
+      "image": "/products/lumenred-aura-face-mask-2.webp",
+      "imageSource": "photo-mask-vanity.png"
     },
     {
       "id": "lr-038",
@@ -1068,7 +1105,8 @@
       ],
       "inStock": true,
       "imageTone": 326,
-      "image": "/products/lumenred-vertex-face-mask-3.webp"
+      "image": "/products/lumenred-vertex-face-mask-3.webp",
+      "imageSource": "photo-mask-white.png"
     },
     {
       "id": "lr-039",
@@ -1095,7 +1133,8 @@
       ],
       "inStock": true,
       "imageTone": 3,
-      "image": "/products/lumenred-halo-face-mask-4.webp"
+      "image": "/products/lumenred-halo-face-mask-4.webp",
+      "imageSource": "photo-mask-rose.png"
     },
     {
       "id": "lr-040",
@@ -1122,7 +1161,8 @@
       ],
       "inStock": true,
       "imageTone": 40,
-      "image": "/products/lumenred-stride-face-mask-5.webp"
+      "image": "/products/lumenred-stride-face-mask-5.webp",
+      "imageSource": "photo-mask-clear.png"
     },
     {
       "id": "lr-041",
@@ -1149,7 +1189,8 @@
       ],
       "inStock": true,
       "imageTone": 77,
-      "image": "/products/lumenred-nova-face-mask-6.webp"
+      "image": "/products/lumenred-nova-face-mask-6.webp",
+      "imageSource": "ref-face-mask.png"
     },
     {
       "id": "lr-042",
@@ -1176,7 +1217,8 @@
       ],
       "inStock": true,
       "imageTone": 114,
-      "image": "/products/lumenred-ridge-face-mask-7.webp"
+      "image": "/products/lumenred-ridge-face-mask-7.webp",
+      "imageSource": "photo-mask-vanity.png"
     },
     {
       "id": "lr-043",
@@ -1203,7 +1245,8 @@
       ],
       "inStock": true,
       "imageTone": 151,
-      "image": "/products/lumenred-solace-face-mask-8.webp"
+      "image": "/products/lumenred-solace-face-mask-8.webp",
+      "imageSource": "photo-mask-vanity.png"
     },
     {
       "id": "lr-044",
@@ -1230,7 +1273,8 @@
       ],
       "inStock": true,
       "imageTone": 188,
-      "image": "/products/lumenred-axiom-face-mask-9.webp"
+      "image": "/products/lumenred-axiom-face-mask-9.webp",
+      "imageSource": "photo-mask-rose.png"
     },
     {
       "id": "lr-045",
@@ -1257,7 +1301,8 @@
       ],
       "inStock": true,
       "imageTone": 225,
-      "image": "/products/lumenred-ember-face-mask-10.webp"
+      "image": "/products/lumenred-ember-face-mask-10.webp",
+      "imageSource": "photo-mask-clear.png"
     },
     {
       "id": "lr-046",
@@ -1284,7 +1329,8 @@
       ],
       "inStock": true,
       "imageTone": 262,
-      "image": "/products/lumenred-lattice-face-mask-11.webp"
+      "image": "/products/lumenred-lattice-face-mask-11.webp",
+      "imageSource": "ref-face-mask.png"
     },
     {
       "id": "lr-047",
@@ -1311,7 +1357,8 @@
       ],
       "inStock": true,
       "imageTone": 299,
-      "image": "/products/lumenred-forge-face-mask-12.webp"
+      "image": "/products/lumenred-forge-face-mask-12.webp",
+      "imageSource": "ref-face-mask.png"
     },
     {
       "id": "lr-048",
@@ -1338,7 +1385,8 @@
       ],
       "inStock": true,
       "imageTone": 336,
-      "image": "/products/lumenred-flex-knee-wrap-1.webp"
+      "image": "/products/lumenred-flex-knee-wrap-1.webp",
+      "imageSource": "photo-knee-wrap.png"
     },
     {
       "id": "lr-049",
@@ -1365,7 +1413,8 @@
       ],
       "inStock": true,
       "imageTone": 13,
-      "image": "/products/lumenred-flex-shoulder-wrap-2.webp"
+      "image": "/products/lumenred-flex-shoulder-wrap-2.webp",
+      "imageSource": "ref-wrap.png"
     },
     {
       "id": "lr-050",
@@ -1392,7 +1441,8 @@
       ],
       "inStock": true,
       "imageTone": 50,
-      "image": "/products/lumenred-flex-lower-back-wrap-3.webp"
+      "image": "/products/lumenred-flex-lower-back-wrap-3.webp",
+      "imageSource": "photo-knee-wrap.png"
     },
     {
       "id": "lr-051",
@@ -1419,7 +1469,8 @@
       ],
       "inStock": true,
       "imageTone": 87,
-      "image": "/products/lumenred-flex-neck-wrap-4.webp"
+      "image": "/products/lumenred-flex-neck-wrap-4.webp",
+      "imageSource": "photo-knee-wrap.png"
     },
     {
       "id": "lr-052",
@@ -1446,7 +1497,8 @@
       ],
       "inStock": true,
       "imageTone": 124,
-      "image": "/products/lumenred-flex-elbow-wrap-5.webp"
+      "image": "/products/lumenred-flex-elbow-wrap-5.webp",
+      "imageSource": "photo-neck-wrap.png"
     },
     {
       "id": "lr-053",
@@ -1473,7 +1525,8 @@
       ],
       "inStock": true,
       "imageTone": 161,
-      "image": "/products/lumenred-flex-wrist-wrap-6.webp"
+      "image": "/products/lumenred-flex-wrist-wrap-6.webp",
+      "imageSource": "photo-foot-wrap.png"
     },
     {
       "id": "lr-054",
@@ -1500,7 +1553,8 @@
       ],
       "inStock": true,
       "imageTone": 198,
-      "image": "/products/lumenred-flex-hip-wrap-7.webp"
+      "image": "/products/lumenred-flex-hip-wrap-7.webp",
+      "imageSource": "photo-elbow-wrap.png"
     },
     {
       "id": "lr-055",
@@ -1527,7 +1581,8 @@
       ],
       "inStock": true,
       "imageTone": 235,
-      "image": "/products/lumenred-flex-calf-wrap-8.webp"
+      "image": "/products/lumenred-flex-calf-wrap-8.webp",
+      "imageSource": "photo-wrist-wrap.png"
     },
     {
       "id": "lr-056",
@@ -1554,7 +1609,8 @@
       ],
       "inStock": true,
       "imageTone": 272,
-      "image": "/products/lumenred-flex-foot-wrap-9.webp"
+      "image": "/products/lumenred-flex-foot-wrap-9.webp",
+      "imageSource": "photo-hip-belt.png"
     },
     {
       "id": "lr-057",
@@ -1581,7 +1637,8 @@
       ],
       "inStock": true,
       "imageTone": 309,
-      "image": "/products/lumenred-flex-abdomen-wrap-10.webp"
+      "image": "/products/lumenred-flex-abdomen-wrap-10.webp",
+      "imageSource": "photo-calf-wrap.png"
     },
     {
       "id": "lr-058",
@@ -1608,7 +1665,8 @@
       ],
       "inStock": true,
       "imageTone": 346,
-      "image": "/products/lumenred-flex-knee-wrap-11.webp"
+      "image": "/products/lumenred-flex-knee-wrap-11.webp",
+      "imageSource": "photo-abdomen-pad.png"
     },
     {
       "id": "lr-059",
@@ -1635,7 +1693,8 @@
       ],
       "inStock": true,
       "imageTone": 23,
-      "image": "/products/lumenred-flex-shoulder-wrap-12.webp"
+      "image": "/products/lumenred-flex-shoulder-wrap-12.webp",
+      "imageSource": "photo-shoulder-wrap.png"
     },
     {
       "id": "lr-060",
@@ -1662,7 +1721,8 @@
       ],
       "inStock": true,
       "imageTone": 60,
-      "image": "/products/lumenred-flex-lower-back-wrap-13.webp"
+      "image": "/products/lumenred-flex-lower-back-wrap-13.webp",
+      "imageSource": "photo-shoulder-wrap.png"
     },
     {
       "id": "lr-061",
@@ -1689,7 +1749,8 @@
       ],
       "inStock": true,
       "imageTone": 97,
-      "image": "/products/lumenred-flex-neck-wrap-14.webp"
+      "image": "/products/lumenred-flex-neck-wrap-14.webp",
+      "imageSource": "photo-shoulder-wrap.png"
     },
     {
       "id": "lr-062",
@@ -1716,7 +1777,8 @@
       ],
       "inStock": true,
       "imageTone": 134,
-      "image": "/products/lumenred-flex-elbow-wrap-15.webp"
+      "image": "/products/lumenred-flex-elbow-wrap-15.webp",
+      "imageSource": "photo-back-belt.png"
     },
     {
       "id": "lr-063",
@@ -1743,7 +1805,8 @@
       ],
       "inStock": true,
       "imageTone": 171,
-      "image": "/products/lumenred-flex-wrist-wrap-16.webp"
+      "image": "/products/lumenred-flex-wrist-wrap-16.webp",
+      "imageSource": "photo-neck-wrap.png"
     },
     {
       "id": "lr-064",
@@ -1770,7 +1833,8 @@
       ],
       "inStock": true,
       "imageTone": 208,
-      "image": "/products/lumenred-flex-hip-wrap-17.webp"
+      "image": "/products/lumenred-flex-hip-wrap-17.webp",
+      "imageSource": "photo-foot-wrap.png"
     },
     {
       "id": "lr-065",
@@ -1797,7 +1861,8 @@
       ],
       "inStock": true,
       "imageTone": 245,
-      "image": "/products/lumenred-flex-calf-wrap-18.webp"
+      "image": "/products/lumenred-flex-calf-wrap-18.webp",
+      "imageSource": "photo-elbow-wrap.png"
     },
     {
       "id": "lr-066",
@@ -1824,7 +1889,8 @@
       ],
       "inStock": true,
       "imageTone": 282,
-      "image": "/products/lumenred-flex-foot-wrap-19.webp"
+      "image": "/products/lumenred-flex-foot-wrap-19.webp",
+      "imageSource": "photo-wrist-wrap.png"
     },
     {
       "id": "lr-067",
@@ -1851,7 +1917,8 @@
       ],
       "inStock": true,
       "imageTone": 319,
-      "image": "/products/lumenred-flex-abdomen-wrap-20.webp"
+      "image": "/products/lumenred-flex-abdomen-wrap-20.webp",
+      "imageSource": "photo-hip-belt.png"
     },
     {
       "id": "lr-068",
@@ -1878,7 +1945,8 @@
       ],
       "inStock": true,
       "imageTone": 356,
-      "image": "/products/lumenred-stride-spot-wand-1.webp"
+      "image": "/products/lumenred-stride-spot-wand-1.webp",
+      "imageSource": "ref-handheld.png"
     },
     {
       "id": "lr-069",
@@ -1905,7 +1973,8 @@
       ],
       "inStock": true,
       "imageTone": 33,
-      "image": "/products/lumenred-nova-spot-wand-2.webp"
+      "image": "/products/lumenred-nova-spot-wand-2.webp",
+      "imageSource": "photo-wand-marble.png"
     },
     {
       "id": "lr-070",
@@ -1932,7 +2001,8 @@
       ],
       "inStock": true,
       "imageTone": 70,
-      "image": "/products/lumenred-ridge-spot-wand-3.webp"
+      "image": "/products/lumenred-ridge-spot-wand-3.webp",
+      "imageSource": "photo-scalp-comb.png"
     },
     {
       "id": "lr-071",
@@ -1959,7 +2029,8 @@
       ],
       "inStock": true,
       "imageTone": 107,
-      "image": "/products/lumenred-solace-spot-wand-4.webp"
+      "image": "/products/lumenred-solace-spot-wand-4.webp",
+      "imageSource": "photo-wand-slate.png"
     },
     {
       "id": "lr-072",
@@ -1986,7 +2057,8 @@
       ],
       "inStock": true,
       "imageTone": 144,
-      "image": "/products/lumenred-axiom-spot-wand-5.webp"
+      "image": "/products/lumenred-axiom-spot-wand-5.webp",
+      "imageSource": "photo-wand-dock.png"
     },
     {
       "id": "lr-073",
@@ -2013,7 +2085,8 @@
       ],
       "inStock": true,
       "imageTone": 181,
-      "image": "/products/lumenred-ember-spot-wand-6.webp"
+      "image": "/products/lumenred-ember-spot-wand-6.webp",
+      "imageSource": "ref-handheld.png"
     },
     {
       "id": "lr-074",
@@ -2040,7 +2113,8 @@
       ],
       "inStock": true,
       "imageTone": 218,
-      "image": "/products/lumenred-lattice-spot-wand-7.webp"
+      "image": "/products/lumenred-lattice-spot-wand-7.webp",
+      "imageSource": "photo-wand-marble.png"
     },
     {
       "id": "lr-075",
@@ -2067,7 +2141,8 @@
       ],
       "inStock": true,
       "imageTone": 255,
-      "image": "/products/lumenred-forge-spot-wand-8.webp"
+      "image": "/products/lumenred-forge-spot-wand-8.webp",
+      "imageSource": "photo-scalp-comb.png"
     },
     {
       "id": "lr-076",
@@ -2094,7 +2169,8 @@
       ],
       "inStock": true,
       "imageTone": 292,
-      "image": "/products/lumenred-pulse-spot-wand-9.webp"
+      "image": "/products/lumenred-pulse-spot-wand-9.webp",
+      "imageSource": "photo-wand-slate.png"
     },
     {
       "id": "lr-077",
@@ -2121,7 +2197,8 @@
       ],
       "inStock": true,
       "imageTone": 329,
-      "image": "/products/lumenred-aura-spot-wand-10.webp"
+      "image": "/products/lumenred-aura-spot-wand-10.webp",
+      "imageSource": "photo-wand-dock.png"
     },
     {
       "id": "lr-078",
@@ -2148,7 +2225,8 @@
       ],
       "inStock": true,
       "imageTone": 6,
-      "image": "/products/lumenred-vertex-spot-wand-11.webp"
+      "image": "/products/lumenred-vertex-spot-wand-11.webp",
+      "imageSource": "ref-handheld.png"
     },
     {
       "id": "lr-079",
@@ -2175,7 +2253,8 @@
       ],
       "inStock": true,
       "imageTone": 43,
-      "image": "/products/lumenred-halo-spot-wand-12.webp"
+      "image": "/products/lumenred-halo-spot-wand-12.webp",
+      "imageSource": "photo-wand-marble.png"
     },
     {
       "id": "lr-080",
@@ -2203,7 +2282,8 @@
       ],
       "inStock": true,
       "imageTone": 80,
-      "image": "/products/lumenred-aura-recovery-bed-1.webp"
+      "image": "/products/lumenred-aura-recovery-bed-1.webp",
+      "imageSource": "photo-bed-spa.png"
     },
     {
       "id": "lr-081",
@@ -2231,7 +2311,8 @@
       ],
       "inStock": true,
       "imageTone": 117,
-      "image": "/products/lumenred-vertex-recovery-bed-2.webp"
+      "image": "/products/lumenred-vertex-recovery-bed-2.webp",
+      "imageSource": "ref-bed.png"
     },
     {
       "id": "lr-082",
@@ -2259,7 +2340,8 @@
       ],
       "inStock": true,
       "imageTone": 154,
-      "image": "/products/lumenred-halo-recovery-bed-3.webp"
+      "image": "/products/lumenred-halo-recovery-bed-3.webp",
+      "imageSource": "photo-clinic-system.png"
     },
     {
       "id": "lr-083",
@@ -2287,7 +2369,8 @@
       ],
       "inStock": true,
       "imageTone": 191,
-      "image": "/products/lumenred-stride-recovery-bed-4.webp"
+      "image": "/products/lumenred-stride-recovery-bed-4.webp",
+      "imageSource": "photo-home-system.png"
     },
     {
       "id": "lr-084",
@@ -2315,7 +2398,8 @@
       ],
       "inStock": true,
       "imageTone": 228,
-      "image": "/products/lumenred-nova-recovery-bed-5.webp"
+      "image": "/products/lumenred-nova-recovery-bed-5.webp",
+      "imageSource": "photo-bed-spa.png"
     },
     {
       "id": "lr-085",
@@ -2343,7 +2427,8 @@
       ],
       "inStock": true,
       "imageTone": 265,
-      "image": "/products/lumenred-ridge-recovery-bed-6.webp"
+      "image": "/products/lumenred-ridge-recovery-bed-6.webp",
+      "imageSource": "ref-bed.png"
     },
     {
       "id": "lr-086",
@@ -2371,7 +2456,8 @@
       ],
       "inStock": true,
       "imageTone": 302,
-      "image": "/products/lumenred-solace-recovery-bed-7.webp"
+      "image": "/products/lumenred-solace-recovery-bed-7.webp",
+      "imageSource": "photo-clinic-system.png"
     },
     {
       "id": "lr-087",
@@ -2399,7 +2485,8 @@
       ],
       "inStock": true,
       "imageTone": 339,
-      "image": "/products/lumenred-axiom-recovery-bed-8.webp"
+      "image": "/products/lumenred-axiom-recovery-bed-8.webp",
+      "imageSource": "photo-home-system.png"
     },
     {
       "id": "lr-088",
@@ -2426,7 +2513,8 @@
       ],
       "inStock": true,
       "imageTone": 16,
-      "image": "/products/lumenred-rolling-stand-1.webp"
+      "image": "/products/lumenred-rolling-stand-1.webp",
+      "imageSource": "ref-accessory-stand.png"
     },
     {
       "id": "lr-089",
@@ -2453,7 +2541,8 @@
       ],
       "inStock": true,
       "imageTone": 53,
-      "image": "/products/lumenred-wall-mount-kit-2.webp"
+      "image": "/products/lumenred-wall-mount-kit-2.webp",
+      "imageSource": "ref-accessory-stand.png"
     },
     {
       "id": "lr-090",
@@ -2480,7 +2569,8 @@
       ],
       "inStock": true,
       "imageTone": 90,
-      "image": "/products/lumenred-protective-goggles-3.webp"
+      "image": "/products/lumenred-protective-goggles-3.webp",
+      "imageSource": "ref-accessory-stand.png"
     },
     {
       "id": "lr-091",
@@ -2507,7 +2597,8 @@
       ],
       "inStock": true,
       "imageTone": 127,
-      "image": "/products/lumenred-door-hook-mount-4.webp"
+      "image": "/products/lumenred-door-hook-mount-4.webp",
+      "imageSource": "photo-case.png"
     },
     {
       "id": "lr-092",
@@ -2534,7 +2625,8 @@
       ],
       "inStock": true,
       "imageTone": 164,
-      "image": "/products/lumenred-session-timer-remote-5.webp"
+      "image": "/products/lumenred-session-timer-remote-5.webp",
+      "imageSource": "photo-mount-kit.png"
     },
     {
       "id": "lr-093",
@@ -2561,7 +2653,8 @@
       ],
       "inStock": true,
       "imageTone": 201,
-      "image": "/products/lumenred-travel-case-6.webp"
+      "image": "/products/lumenred-travel-case-6.webp",
+      "imageSource": "photo-ceiling-panel.png"
     },
     {
       "id": "lr-094",
@@ -2588,7 +2681,8 @@
       ],
       "inStock": true,
       "imageTone": 238,
-      "image": "/products/lumenred-extension-cable-10ft-7.webp"
+      "image": "/products/lumenred-extension-cable-10ft-7.webp",
+      "imageSource": "photo-dust-cover.png"
     },
     {
       "id": "lr-095",
@@ -2615,7 +2709,8 @@
       ],
       "inStock": true,
       "imageTone": 275,
-      "image": "/products/lumenred-floor-stabilizer-base-8.webp"
+      "image": "/products/lumenred-floor-stabilizer-base-8.webp",
+      "imageSource": "photo-dolly.png"
     },
     {
       "id": "lr-096",
@@ -2642,7 +2737,8 @@
       ],
       "inStock": true,
       "imageTone": 312,
-      "image": "/products/lumenred-dual-panel-linker-9.webp"
+      "image": "/products/lumenred-dual-panel-linker-9.webp",
+      "imageSource": "ref-accessory-stand.png"
     },
     {
       "id": "lr-097",
@@ -2669,7 +2765,8 @@
       ],
       "inStock": true,
       "imageTone": 349,
-      "image": "/products/lumenred-cleaning-kit-10.webp"
+      "image": "/products/lumenred-cleaning-kit-10.webp",
+      "imageSource": "ref-accessory-stand.png"
     },
     {
       "id": "lr-098",
@@ -2696,7 +2793,8 @@
       ],
       "inStock": true,
       "imageTone": 26,
-      "image": "/products/lumenred-ceiling-suspension-kit-11.webp"
+      "image": "/products/lumenred-ceiling-suspension-kit-11.webp",
+      "imageSource": "photo-goggles.png"
     },
     {
       "id": "lr-099",
@@ -2723,7 +2821,8 @@
       ],
       "inStock": true,
       "imageTone": 63,
-      "image": "/products/lumenred-pulse-controller-12.webp"
+      "image": "/products/lumenred-pulse-controller-12.webp",
+      "imageSource": "photo-remote-goggles.png"
     },
     {
       "id": "lr-100",
@@ -2750,7 +2849,8 @@
       ],
       "inStock": true,
       "imageTone": 100,
-      "image": "/products/lumenred-tabletop-easel-13.webp"
+      "image": "/products/lumenred-tabletop-easel-13.webp",
+      "imageSource": "photo-mount-kit.png"
     },
     {
       "id": "lr-101",
@@ -2777,7 +2877,8 @@
       ],
       "inStock": true,
       "imageTone": 137,
-      "image": "/products/lumenred-protective-dust-cover-14.webp"
+      "image": "/products/lumenred-protective-dust-cover-14.webp",
+      "imageSource": "photo-ceiling-panel.png"
     },
     {
       "id": "lr-102",
@@ -2804,7 +2905,8 @@
       ],
       "inStock": true,
       "imageTone": 174,
-      "image": "/products/lumenred-hard-shipping-crate-15.webp"
+      "image": "/products/lumenred-hard-shipping-crate-15.webp",
+      "imageSource": "photo-dust-cover.png"
     },
     {
       "id": "lr-103",
@@ -2831,7 +2933,8 @@
       ],
       "inStock": true,
       "imageTone": 211,
-      "image": "/products/lumenred-ir-safety-glasses-pro-16.webp"
+      "image": "/products/lumenred-ir-safety-glasses-pro-16.webp",
+      "imageSource": "photo-dolly.png"
     },
     {
       "id": "lr-104",
@@ -2858,7 +2961,8 @@
       ],
       "inStock": true,
       "imageTone": 248,
-      "image": "/products/lumenred-mobile-dolly-17.webp"
+      "image": "/products/lumenred-mobile-dolly-17.webp",
+      "imageSource": "ref-accessory-stand.png"
     },
     {
       "id": "lr-105",
@@ -2885,7 +2989,8 @@
       ],
       "inStock": true,
       "imageTone": 285,
-      "image": "/products/lumenred-multi-outlet-hub-18.webp"
+      "image": "/products/lumenred-multi-outlet-hub-18.webp",
+      "imageSource": "photo-goggles.png"
     },
     {
       "id": "lr-106",
@@ -2912,7 +3017,8 @@
       ],
       "inStock": true,
       "imageTone": 322,
-      "image": "/products/lumenred-calibration-card-19.webp"
+      "image": "/products/lumenred-calibration-card-19.webp",
+      "imageSource": "photo-case.png"
     },
     {
       "id": "lr-107",
@@ -2939,7 +3045,8 @@
       ],
       "inStock": true,
       "imageTone": 359,
-      "image": "/products/lumenred-studio-anchor-set-20.webp"
+      "image": "/products/lumenred-studio-anchor-set-20.webp",
+      "imageSource": "photo-remote-goggles.png"
     },
     {
       "id": "lr-108",
@@ -2966,7 +3073,8 @@
       ],
       "inStock": true,
       "imageTone": 36,
-      "image": "/products/lumenred-starter-desk-kit.webp"
+      "image": "/products/lumenred-starter-desk-kit.webp",
+      "imageSource": "photo-couple-kit.png"
     },
     {
       "id": "lr-109",
@@ -2993,7 +3101,8 @@
       ],
       "inStock": true,
       "imageTone": 73,
-      "image": "/products/lumenred-face-glow-kit.webp"
+      "image": "/products/lumenred-face-glow-kit.webp",
+      "imageSource": "photo-athlete-kit.png"
     },
     {
       "id": "lr-110",
@@ -3020,7 +3129,8 @@
       ],
       "inStock": true,
       "imageTone": 110,
-      "image": "/products/lumenred-athlete-joint-kit.webp"
+      "image": "/products/lumenred-athlete-joint-kit.webp",
+      "imageSource": "photo-starter-kit.png"
     },
     {
       "id": "lr-111",
@@ -3047,7 +3157,8 @@
       ],
       "inStock": true,
       "imageTone": 147,
-      "image": "/products/lumenred-home-panel-duo.webp"
+      "image": "/products/lumenred-home-panel-duo.webp",
+      "imageSource": "photo-dual-panel.png"
     },
     {
       "id": "lr-112",
@@ -3074,7 +3185,8 @@
       ],
       "inStock": true,
       "imageTone": 184,
-      "image": "/products/lumenred-studio-founders-kit.webp"
+      "image": "/products/lumenred-studio-founders-kit.webp",
+      "imageSource": "photo-dual-panel.png"
     },
     {
       "id": "lr-113",
@@ -3101,7 +3213,8 @@
       ],
       "inStock": true,
       "imageTone": 221,
-      "image": "/products/lumenred-travel-recovery-kit.webp"
+      "image": "/products/lumenred-travel-recovery-kit.webp",
+      "imageSource": "photo-clinic-system.png"
     },
     {
       "id": "lr-114",
@@ -3128,7 +3241,8 @@
       ],
       "inStock": true,
       "imageTone": 258,
-      "image": "/products/lumenred-couple-wellness-kit.webp"
+      "image": "/products/lumenred-couple-wellness-kit.webp",
+      "imageSource": "photo-home-system.png"
     },
     {
       "id": "lr-115",
@@ -3155,7 +3269,8 @@
       ],
       "inStock": true,
       "imageTone": 295,
-      "image": "/products/lumenred-clinic-corner-kit.webp"
+      "image": "/products/lumenred-clinic-corner-kit.webp",
+      "imageSource": "photo-couple-kit.png"
     },
     {
       "id": "lr-116",
@@ -3182,7 +3297,8 @@
       ],
       "inStock": true,
       "imageTone": 332,
-      "image": "/products/lumenred-back-core-kit.webp"
+      "image": "/products/lumenred-back-core-kit.webp",
+      "imageSource": "photo-athlete-kit.png"
     },
     {
       "id": "lr-117",
@@ -3209,7 +3325,8 @@
       ],
       "inStock": true,
       "imageTone": 9,
-      "image": "/products/lumenred-nightstand-ritual-kit.webp"
+      "image": "/products/lumenred-nightstand-ritual-kit.webp",
+      "imageSource": "photo-starter-kit.png"
     },
     {
       "id": "lr-118",
@@ -3236,7 +3353,8 @@
       ],
       "inStock": true,
       "imageTone": 46,
-      "image": "/products/lumenred-pro-mount-bundle.webp"
+      "image": "/products/lumenred-pro-mount-bundle.webp",
+      "imageSource": "photo-dual-panel.png"
     },
     {
       "id": "lr-119",
@@ -3263,7 +3381,8 @@
       ],
       "inStock": true,
       "imageTone": 83,
-      "image": "/products/lumenred-full-spectrum-stack.webp"
+      "image": "/products/lumenred-full-spectrum-stack.webp",
+      "imageSource": "photo-clinic-system.png"
     },
     {
       "id": "lr-120",
@@ -3290,7 +3409,9 @@
       ],
       "inStock": true,
       "imageTone": 120,
-      "image": "/products/lumenred-complete-home-system.webp"
+      "image": "/products/lumenred-complete-home-system.webp",
+      "imageSource": "photo-couple-kit.png"
     }
-  ]
+  ],
+  "imageStyle": "photorealistic"
 }
