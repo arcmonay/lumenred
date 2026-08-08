@@ -8,7 +8,8 @@ Custom red light therapy equipment storefront — Next.js + Shopify-ready catalo
 
 - Brand storefront (home, shop, collections, product pages, cart, science, about)
 - **120 product listings** across 8 collections
-- Shopify Admin import CSV at `data/shopify-products.csv`
+- Unique product image for every listing in `public/products/`
+- Shopify Admin import CSV at `data/shopify-products.csv` (includes Image Src URLs)
 - Local catalog at `data/catalog.json`
 - Storefront API helper at `lib/shopify.ts`
 
@@ -24,16 +25,15 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Catalog scripts
 
 ```bash
-npm run catalog       # regenerate catalog + Shopify CSV
-npm run catalog:csv   # export CSV only from data/catalog.json
+npm run images        # generate/update all 120 product images
+npm run catalog:csv   # export CSV (includes image URLs for Shopify)
 ```
 
 ## Shopify setup
 
 1. Create a Shopify store (or use an existing one).
-2. **Products → Import** and upload `data/shopify-products.csv`.
-3. Add product photos in Shopify Admin.
-4. Create a **Storefront API** token.
+2. **Products → Import** and upload `data/shopify-products.csv` (images pull from GitHub raw URLs after push).
+3. Create a **Storefront API** token.
 5. Copy `.env.example` → `.env.local` and fill:
 
 ```env
