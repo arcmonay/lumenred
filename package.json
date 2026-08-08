@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "catalog": "node scripts/generate-catalog.mjs && node scripts/export-shopify-csv.mjs",
     "catalog:csv": "node scripts/export-shopify-csv.mjs"
   },
   "dependencies": {
