@@ -1,4 +1,12 @@
-import { copyFileSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import {
+  copyFileSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  renameSync,
+  unlinkSync,
+  writeFileSync,
+} from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
@@ -168,6 +176,7 @@ async function renderProduct(product, index) {
 
   const outName = `${product.handle}.webp`;
   const outPath = join(outDir, outName);
+  const tmpPath = join(outDir, `${product.handle}.tmp.webp`);
 
   await sharp(input)
     .extract({
@@ -184,7 +193,18 @@ async function renderProduct(product, index) {
     })
     .sharpen({ sigma: 0.7 })
     .webp({ quality: 84 })
-    .toFile(outPath);
+    .toFile(tmpPath);
+
+  try {
+    renameSync(tmpPath, outPath);
+  } catch {
+    copyFileSync(tmpPath, outPath);
+    try {
+      unlinkSync(tmpPath);
+    } catch {
+      /* ignore */
+    }
+  }
 
   product.image = `/products/${outName}`;
   product.imageSource = file;
