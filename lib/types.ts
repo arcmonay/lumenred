@@ -24,6 +24,7 @@ export type Product = {
   tags: string[];
   inStock: boolean;
   imageTone: number;
+  image: string;
 };
 
 export type CartLine = {

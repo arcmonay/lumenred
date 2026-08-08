@@ -9,11 +9,7 @@ export function ProductCard({ product }: { product: Product }) {
       href={`/shop/${product.handle}`}
       className="group block transition-transform duration-300 hover:-translate-y-1"
     >
-      <ProductVisual
-        tone={product.imageTone}
-        title={product.title}
-        collection={product.collection}
-      />
+      <ProductVisual product={product} />
       <div className="mt-3 space-y-1 px-0.5">
         <p className="text-[0.7rem] uppercase tracking-[0.14em] text-[var(--ink-faint)]">
           {collectionTitle(product.collection)}

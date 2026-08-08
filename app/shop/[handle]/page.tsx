@@ -41,9 +41,8 @@ export default async function ProductPage({ params }: { params: Params }) {
     <>
       <article className="container grid gap-10 py-10 md:grid-cols-2 md:py-16">
         <ProductVisual
-          tone={product.imageTone}
-          title={product.title}
-          collection={product.collection}
+          product={product}
+          priority
           className="!aspect-square"
         />
         <div>

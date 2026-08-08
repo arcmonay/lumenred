@@ -31,9 +31,7 @@ export function CartView() {
             className="grid grid-cols-[96px_1fr] gap-4 border border-[var(--line)] bg-white/40 p-3 sm:grid-cols-[120px_1fr_auto]"
           >
             <ProductVisual
-              tone={product.imageTone}
-              title={product.title}
-              collection={product.collection}
+              product={product}
               className="!aspect-square"
             />
             <div className="min-w-0">
