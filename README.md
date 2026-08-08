@@ -1,16 +1,18 @@
 # Lumenred
 
-Red light therapy equipment storefront on Next.js with a **120-product** catalog, local cart, and Shopify import/connect path.
+Custom red light therapy equipment storefront — Next.js + Shopify-ready catalog.
+
+**Repo:** https://github.com/arcmonay/lumenred
 
 ## What’s included
 
-- Branded storefront (home, shop, collections, product pages, cart, science, about)
-- `data/catalog.json` — 120 devices across 8 collections
-- `data/shopify-products.csv` — Shopify Admin product import
-- `lib/shopify.ts` — Storefront API helper (activate with env vars)
-- Local cart (browser storage) until Shopify checkout is connected
+- Brand storefront (home, shop, collections, product pages, cart, science, about)
+- **120 product listings** across 8 collections
+- Shopify Admin import CSV at `data/shopify-products.csv`
+- Local catalog at `data/catalog.json`
+- Storefront API helper at `lib/shopify.ts`
 
-## Develop
+## Quick start
 
 ```bash
 npm install
@@ -19,20 +21,30 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Connect Shopify
+## Catalog scripts
 
-1. Create / open a Shopify store.
-2. Admin → **Products** → **Import** → upload `data/shopify-products.csv`.
-3. Create a custom app with Storefront API access.
-4. Copy `.env.example` → `.env.local`:
+```bash
+npm run catalog       # regenerate catalog + Shopify CSV
+npm run catalog:csv   # export CSV only from data/catalog.json
+```
+
+## Shopify setup
+
+1. Create a Shopify store (or use an existing one).
+2. **Products → Import** and upload `data/shopify-products.csv`.
+3. Add product photos in Shopify Admin.
+4. Create a **Storefront API** token.
+5. Copy `.env.example` → `.env.local` and fill:
 
 ```env
 SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
-SHOPIFY_STOREFRONT_TOKEN=your_storefront_token
+SHOPIFY_STOREFRONT_TOKEN=...
 ```
 
-5. Deploy this repo as a **new** Vercel project (do not reuse an old deployment).
+6. Deploy this app as a **new** Vercel project pointed at `arcmonay/lumenred`.
 
-## Repo
+Until Shopify credentials are connected, the site runs on the local catalog and browser cart.
 
-https://github.com/arcmonay/lumenred
+## Collections
+
+Full body panels · Desktop panels · Face masks · Targeted wraps · Handheld · Beds & systems · Accessories · Bundles
