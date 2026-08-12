@@ -66,7 +66,7 @@ export function Footer() {
       </div>
       <div className="border-t border-[var(--line)]">
         <div className="container flex flex-col gap-2 py-5 text-xs text-[var(--ink-faint)] sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} Lumenred. Built for Shopify catalog import.</p>
+          <p>© 2025 Lumenred. Built for Shopify catalog import.</p>
           <p>Not a medical device. Follow professional guidance for therapeutic use.</p>
         </div>
       </div>
