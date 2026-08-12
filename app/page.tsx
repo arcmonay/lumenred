@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/BrandLogo";
 import { ProductGrid } from "@/components/ProductGrid";
 import { getCollections, getFeaturedProducts, getProducts } from "@/lib/products";
 
@@ -37,6 +38,7 @@ export default function HomePage() {
         <div className="container relative grid min-h-[calc(100svh-4.25rem)] items-center py-16 md:py-20">
           <div className="max-w-xl">
             <p className="eyebrow fade-up">Red light therapy equipment</p>
+            <BrandLogo size={88} priority className="fade-up mt-5" />
             <h1 className="font-display fade-up-delay mt-4 text-[clamp(3.2rem,8vw,5.6rem)] leading-[0.95] tracking-tight">
               Lumen<span className="text-[var(--ember)]">red</span>
             </h1>

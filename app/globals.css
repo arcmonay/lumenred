@@ -64,6 +64,11 @@ input {
   font-family: var(--font-fraunces), Georgia, serif;
 }
 
+.brand-logo {
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px rgba(196, 137, 90, 0.28), 0 8px 24px rgba(209, 69, 47, 0.22);
+}
+
 .site-shell {
   min-height: 100vh;
   display: flex;

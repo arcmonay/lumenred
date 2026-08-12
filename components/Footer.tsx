@@ -1,13 +1,17 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/BrandLogo";
 
 export function Footer() {
   return (
     <footer className="mt-auto border-t border-[var(--line)]">
       <div className="container grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-display text-3xl font-semibold tracking-tight">
-            Lumen<span className="text-[var(--ember)]">red</span>
-          </p>
+          <div className="flex items-center gap-3">
+            <BrandLogo size={52} />
+            <p className="font-display text-3xl font-semibold tracking-tight">
+              Lumen<span className="text-[var(--ember)]">red</span>
+            </p>
+          </div>
           <p className="mt-3 max-w-sm text-[var(--ink-muted)] leading-relaxed">
             Clinical-grade red and near-infrared systems for home recovery rooms
             and professional studios.

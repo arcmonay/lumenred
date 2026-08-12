@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BrandLogo } from "@/components/BrandLogo";
 import { useCart } from "@/lib/cart-context";
 
 const links = [
@@ -19,12 +20,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[color-mix(in_srgb,var(--bg)_82%,transparent)] backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between gap-4 md:h-[4.25rem]">
-        <Link href="/" className="group flex items-baseline gap-2">
-          <span className="font-display text-2xl font-semibold tracking-tight md:text-[1.7rem]">
-            Lumen<span className="text-[var(--ember)]">red</span>
-          </span>
-          <span className="hidden text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-[var(--ink-faint)] sm:inline">
-            Infrared Systems
+        <Link href="/" className="group flex items-center gap-2.5">
+          <BrandLogo size={40} priority className="shrink-0" />
+          <span className="flex items-baseline gap-2">
+            <span className="font-display text-2xl font-semibold tracking-tight md:text-[1.7rem]">
+              Lumen<span className="text-[var(--ember)]">red</span>
+            </span>
+            <span className="hidden text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-[var(--ink-faint)] sm:inline">
+              Infrared Systems
+            </span>
           </span>
         </Link>
 
