@@ -33,24 +33,18 @@ export default async function CollectionPage({ params }: Props) {
   const products = getProductsByCollection(slug);
 
   return (
-    <div className="container py-12 md:py-16">
-      <p className="mb-6 text-sm text-[var(--ink-faint)]">
-        <Link href="/shop" className="hover:text-[var(--ink)]">
-          Shop
-        </Link>
-        <span className="mx-2">/</span>
+    <div className="chamber-page">
+      <p className="mb-4 text-[0.72rem] uppercase tracking-[0.16em] text-[var(--ink-faint)]">
+        <Link href="/shop">Cabinet</Link>
+        <span className="mx-2">·</span>
         <span>{collection.title}</span>
       </p>
-      <div className="mb-10 max-w-2xl">
-        <p className="eyebrow">Collection</p>
-        <h1 className="font-display mt-3 text-4xl tracking-tight md:text-5xl">
-          {collection.title}
-        </h1>
-        <p className="mt-3 text-[var(--ink-muted)]">{collection.description}</p>
-        <p className="mt-2 text-sm text-[var(--ink-faint)]">
-          {products.length} products
-        </p>
-      </div>
+      <h1 className="font-display ritual__title" style={{ fontSize: "clamp(2.6rem, 6vw, 4.4rem)", textAlign: "left" }}>
+        {collection.title}
+      </h1>
+      <p className="mt-4 mb-10 max-w-md text-[var(--ink-muted)]">
+        {collection.description} {products.length} systems in this step.
+      </p>
       <ProductGrid products={products} />
     </div>
   );

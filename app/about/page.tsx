@@ -1,14 +1,14 @@
 export const metadata = {
-  title: "About",
+  title: "Studio",
   description: "About Lumenred red light therapy equipment.",
 };
 
 export default function AboutPage() {
   return (
-    <div className="container max-w-3xl py-12 md:py-16">
-      <p className="eyebrow">About</p>
-      <h1 className="font-display mt-3 text-4xl tracking-tight md:text-5xl">
-        Built like equipment, sold like a store
+    <article className="chamber-page">
+      <p className="eyebrow">Studio</p>
+      <h1 className="font-display ritual__title" style={{ fontSize: "clamp(2.6rem, 6vw, 4.2rem)", textAlign: "left" }}>
+        Built like equipment.
       </h1>
       <div className="mt-8 space-y-5 text-lg leading-relaxed text-[var(--ink-muted)]">
         <p>
@@ -18,8 +18,8 @@ export default function AboutPage() {
         </p>
         <p>
           This project ships with 120 SKUs across panels, masks, handhelds,
-          wraps, accessories, and bundles—so the shop section feels complete
-          from day one.
+          wraps, accessories, and bundles—so the cabinet feels complete from
+          day one.
         </p>
         <p>
           Connect your Shopify store when you&apos;re ready: import{" "}
@@ -27,6 +27,6 @@ export default function AboutPage() {
           add Storefront API credentials, and wire live checkout.
         </p>
       </div>
-    </div>
+    </article>
   );
 }

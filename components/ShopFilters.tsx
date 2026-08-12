@@ -21,42 +21,45 @@ export function ShopFilters({ collections }: { collections: Collection[] }) {
   }
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-      <div className="flex flex-wrap gap-2">
-        <button
-          type="button"
-          onClick={() => update({ collection: "all" })}
-          className={`rounded-full border px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] transition-colors ${
-            active === "all"
-              ? "border-[var(--ember)] bg-[rgba(209,69,47,0.15)] text-[var(--ink)]"
-              : "border-[var(--line)] text-[var(--ink-muted)] hover:border-[rgba(209,69,47,0.4)]"
-          }`}
-        >
-          All
-        </button>
-        {collections.map((c) => (
+    <div className="flex flex-col gap-6">
+      <ol className="m-0 list-none border-l border-[rgba(209,69,47,0.45)] p-0">
+        <li>
           <button
-            key={c.handle}
             type="button"
-            onClick={() => update({ collection: c.handle })}
-            className={`rounded-full border px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] transition-colors ${
-              active === c.handle
-                ? "border-[var(--ember)] bg-[rgba(209,69,47,0.15)] text-[var(--ink)]"
-                : "border-[var(--line)] text-[var(--ink-muted)] hover:border-[rgba(209,69,47,0.4)]"
+            onClick={() => update({ collection: "all" })}
+            className={`block w-full py-2 pl-4 text-left ${
+              active === "all" ? "text-[var(--ink)]" : "text-[var(--ink-faint)]"
             }`}
           >
-            {c.title}
+            <span className="mr-3 text-[0.72rem] tracking-[0.14em] text-[var(--ember)]">00</span>
+            Full protocol
           </button>
+        </li>
+        {collections.map((c, i) => (
+          <li key={c.handle}>
+            <button
+              type="button"
+              onClick={() => update({ collection: c.handle })}
+              className={`block w-full py-2 pl-4 text-left ${
+                active === c.handle ? "text-[var(--ink)]" : "text-[var(--ink-faint)]"
+              }`}
+            >
+              <span className="mr-3 text-[0.72rem] tracking-[0.14em] text-[var(--ember)]">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              {c.title}
+            </button>
+          </li>
         ))}
-      </div>
-      <label className="block w-full max-w-xs">
+      </ol>
+      <label className="block w-full">
         <span className="sr-only">Search products</span>
         <input
           type="search"
           defaultValue={q}
-          placeholder="Search 120 systems…"
+          placeholder="Search wavelength, panel, mask…"
           onChange={(e) => update({ q: e.target.value })}
-          className="w-full rounded-full border border-[var(--line)] bg-[rgba(255,255,255,0.03)] px-4 py-2.5 text-sm text-[var(--ink)] outline-none placeholder:text-[var(--ink-faint)] focus:border-[rgba(209,69,47,0.5)]"
+          className="w-full border-0 border-b border-[var(--line)] bg-transparent px-0 py-2 text-sm outline-none placeholder:text-[var(--ink-faint)] focus:border-[var(--ember)]"
         />
       </label>
     </div>

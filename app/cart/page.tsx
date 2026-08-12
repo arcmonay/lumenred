@@ -1,19 +1,16 @@
 import { CartView } from "@/components/CartView";
 
-export const metadata = {
-  title: "Cart",
-};
+export const metadata = { title: "Session" };
 
 export default function CartPage() {
   return (
-    <div className="container py-12 md:py-16">
-      <div className="mb-10">
-        <p className="eyebrow">Cart</p>
-        <h1 className="font-display mt-3 text-4xl tracking-tight md:text-5xl">
-          Your bag
-        </h1>
+    <div className="chamber-page">
+      <h1 className="font-display ritual__title" style={{ fontSize: "clamp(2.6rem, 6vw, 4.2rem)", textAlign: "left" }}>
+        The session
+      </h1>
+      <div className="mt-10">
+        <CartView />
       </div>
-      <CartView />
     </div>
   );
 }

@@ -69,14 +69,255 @@ input {
   box-shadow: 0 0 0 1px rgba(196, 137, 90, 0.28), 0 8px 24px rgba(209, 69, 47, 0.22);
 }
 
-.site-shell {
+.chamber {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(209, 69, 47, 0.18), transparent 55%),
-    radial-gradient(900px 500px at 0% 30%, rgba(196, 137, 90, 0.08), transparent 50%),
-    var(--bg);
+    radial-gradient(700px 480px at 50% 0%, rgba(209, 69, 47, 0.16), transparent 58%),
+    #0c0d11;
+}
+
+.light-bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 7px;
+  z-index: 40;
+  background: linear-gradient(180deg, #ff6a4a, #d1452f 40%, #5a1d14);
+  box-shadow: 0 0 28px rgba(209, 69, 47, 0.7), 0 0 80px rgba(209, 69, 47, 0.28);
+}
+
+.mast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.1rem;
+  padding: 2.2rem 1.5rem 1.6rem 2rem;
+}
+
+.mast-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.mast-brand span {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  letter-spacing: -0.03em;
+}
+
+.mast-brand span span {
+  color: var(--ember);
+}
+
+.orbit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.15rem 0.15rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.orbit a:hover,
+.orbit a.is-active {
+  color: var(--ink);
+}
+
+.orbit .dot {
+  margin: 0 0.45rem;
+  color: var(--ember);
+}
+
+.protocol {
+  flex: 1;
+}
+
+.ignite {
+  display: inline-block;
+  margin-top: 1.7rem;
+  padding: 0.8rem 1.4rem;
+  background: transparent;
+  color: inherit;
+  border: 1px solid var(--ember);
+  box-shadow: 0 0 24px rgba(209, 69, 47, 0.28);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.ignite:hover {
+  background: var(--ember);
+  color: #fff;
+}
+
+.ritual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 4rem 2rem;
+}
+
+.ritual__title {
+  margin: 0.4rem 0 0;
+  font-size: clamp(3.4rem, 10vw, 7rem);
+  line-height: 0.86;
+  letter-spacing: -0.04em;
+}
+
+.ritual__lede {
+  margin: 1.2rem auto 0;
+  max-width: 26rem;
+  color: var(--ink-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.ritual__hero {
+  display: block;
+  width: min(22rem, 100%);
+  margin-top: 2.8rem;
+}
+
+.ritual__hero span {
+  display: block;
+  margin-top: 0.9rem;
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: 1.3rem;
+}
+
+.steps,
+.cabinet,
+.chamber-page {
+  width: min(42rem, calc(100% - 3.2rem));
+  margin-inline: auto;
+  padding: 1rem 0 4rem;
+  padding-left: 0.75rem;
+}
+
+.steps__head,
+.cabinet h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.steps__head h2,
+.cabinet h2 {
+  margin: 0 0 1.2rem;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+.steps__head a {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ember);
+}
+
+.steps ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid rgba(209, 69, 47, 0.45);
+}
+
+.steps li a {
+  display: grid;
+  grid-template-columns: 2.6rem 1fr;
+  gap: 0.15rem 0.9rem;
+  padding: 1rem 0 1rem 1.2rem;
+}
+
+.steps li span {
+  grid-row: 1 / span 2;
+  color: var(--ember);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  padding-top: 0.4rem;
+}
+
+.steps li strong {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.steps li em {
+  grid-column: 2;
+  font-style: normal;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+}
+
+.cabinet__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.cabinet__list a {
+  display: grid;
+  grid-template-columns: 2.2rem 7.5rem 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cabinet__list span {
+  color: var(--ember);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+
+.cabinet__list p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.cabinet__list em {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+.afterglow {
+  border-top: 1px solid rgba(209, 69, 47, 0.35);
+  box-shadow: 0 -12px 40px rgba(209, 69, 47, 0.08);
+  padding: 1.2rem 1.5rem 1.4rem 2rem;
+  text-align: center;
+}
+
+.afterglow p {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+@media (min-width: 900px) {
+  .light-bar {
+    width: 10px;
+  }
+
+  .ritual {
+    min-height: 78vh;
+    justify-content: center;
+    padding-top: 3rem;
+  }
 }
 
 .container {

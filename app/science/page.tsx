@@ -5,10 +5,10 @@ export const metadata = {
 
 export default function SciencePage() {
   return (
-    <div className="container max-w-3xl py-12 md:py-16">
+    <article className="chamber-page">
       <p className="eyebrow">Science</p>
-      <h1 className="font-display mt-3 text-4xl tracking-tight md:text-5xl">
-        Wavelengths with a job
+      <h1 className="font-display ritual__title" style={{ fontSize: "clamp(2.6rem, 6vw, 4.2rem)", textAlign: "left" }}>
+        Wavelengths with a job.
       </h1>
       <div className="mt-8 space-y-5 text-lg leading-relaxed text-[var(--ink-muted)]">
         <p>
@@ -26,22 +26,24 @@ export default function SciencePage() {
           are educational and commercial, not medical advice.
         </p>
       </div>
-      <dl className="mt-10 grid gap-4 sm:grid-cols-2">
+      <ol className="mt-10" style={{ listStyle: "none", margin: 0, padding: 0, borderLeft: "1px solid rgba(209,69,47,0.45)" }}>
         {[
           ["630–660nm", "Surface-focused red for facial and skin routines."],
           ["850nm", "Near-infrared for deeper recovery-oriented sessions."],
           ["Irradiance", "Power density at a stated distance (mW/cm²)."],
           ["Session design", "Timed protocols beat endless “more is better.”"],
-        ].map(([k, v]) => (
-          <div
-            key={k}
-            className="rounded-2xl border border-[var(--line)] bg-[rgba(255,255,255,0.02)] p-5"
-          >
-            <dt className="font-display text-xl text-[var(--ink)]">{k}</dt>
-            <dd className="mt-2 text-sm text-[var(--ink-muted)]">{v}</dd>
-          </div>
+        ].map(([k, v], i) => (
+          <li key={k} className="grid grid-cols-[2.6rem_1fr] gap-x-4 py-4 pl-5">
+            <span className="text-[0.78rem] tracking-[0.12em] text-[var(--ember)]">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <div>
+              <p className="font-display text-2xl">{k}</p>
+              <p className="mt-1 text-sm text-[var(--ink-muted)]">{v}</p>
+            </div>
+          </li>
         ))}
-      </dl>
-    </div>
+      </ol>
+    </article>
   );
 }

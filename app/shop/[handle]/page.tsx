@@ -39,7 +39,8 @@ export default async function ProductPage({ params }: { params: Params }) {
 
   return (
     <>
-      <article className="container grid gap-10 py-10 md:grid-cols-2 md:py-16">
+      <article className="chamber-page" style={{ width: "min(56rem, calc(100% - 3.2rem))" }}>
+        <div className="grid gap-10 md:grid-cols-2">
         <ProductVisual
           product={product}
           priority
@@ -89,13 +90,14 @@ export default async function ProductPage({ params }: { params: Params }) {
             <AddToCartButton handle={product.handle} />
           </div>
         </div>
+        </div>
       </article>
 
       {related.length ? (
-        <section className="container pb-16">
+        <section className="chamber-page pt-0">
           <div className="mb-8 max-w-xl">
             <h2 className="font-display text-3xl tracking-tight">
-              Related in {collection?.title ?? "this collection"}
+              Same protocol
             </h2>
             <p className="mt-2 text-[var(--ink-muted)]">
               More options with a similar form factor.

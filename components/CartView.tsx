@@ -10,13 +10,12 @@ export function CartView() {
 
   if (!items.length) {
     return (
-      <div className="border border-[var(--line)] bg-white/40 p-10 text-center">
-        <h2 className="font-display text-3xl tracking-tight">Your cart is empty</h2>
-        <p className="mt-3 text-[var(--ink-muted)]">
-          Add panels, masks, or kits from the shop.
+      <div className="max-w-md">
+        <p className="text-lg text-[var(--ink-muted)]">
+          No systems on this session yet. Open the cabinet.
         </p>
-        <Link href="/shop" className="btn btn-primary mt-8">
-          Continue shopping
+        <Link href="/shop" className="ignite">
+          Begin a session →
         </Link>
       </div>
     );
