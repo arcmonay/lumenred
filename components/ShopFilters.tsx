@@ -21,45 +21,34 @@ export function ShopFilters({ collections }: { collections: Collection[] }) {
   }
 
   return (
-    <div className="flex flex-col gap-6">
-      <ol className="m-0 list-none border-l border-[rgba(209,69,47,0.45)] p-0">
-        <li>
+    <div>
+      <div className="spectrum-tabs" role="tablist" aria-label="Collections">
+        <button
+          type="button"
+          className={active === "all" ? "is-on" : ""}
+          onClick={() => update({ collection: "all" })}
+        >
+          All bays
+        </button>
+        {collections.map((c) => (
           <button
+            key={c.handle}
             type="button"
-            onClick={() => update({ collection: "all" })}
-            className={`block w-full py-2 pl-4 text-left ${
-              active === "all" ? "text-[var(--ink)]" : "text-[var(--ink-faint)]"
-            }`}
+            className={active === c.handle ? "is-on" : ""}
+            onClick={() => update({ collection: c.handle })}
           >
-            <span className="mr-3 text-[0.72rem] tracking-[0.14em] text-[var(--ember)]">00</span>
-            Full protocol
+            {c.title}
           </button>
-        </li>
-        {collections.map((c, i) => (
-          <li key={c.handle}>
-            <button
-              type="button"
-              onClick={() => update({ collection: c.handle })}
-              className={`block w-full py-2 pl-4 text-left ${
-                active === c.handle ? "text-[var(--ink)]" : "text-[var(--ink-faint)]"
-              }`}
-            >
-              <span className="mr-3 text-[0.72rem] tracking-[0.14em] text-[var(--ember)]">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              {c.title}
-            </button>
-          </li>
         ))}
-      </ol>
+      </div>
       <label className="block w-full">
         <span className="sr-only">Search products</span>
         <input
           type="search"
           defaultValue={q}
-          placeholder="Search wavelength, panel, mask…"
+          placeholder="Search wavelength, panel, mask, wrap…"
           onChange={(e) => update({ q: e.target.value })}
-          className="w-full border-0 border-b border-[var(--line)] bg-transparent px-0 py-2 text-sm outline-none placeholder:text-[var(--ink-faint)] focus:border-[var(--ember)]"
+          className="search-rail"
         />
       </label>
     </div>

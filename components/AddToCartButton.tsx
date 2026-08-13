@@ -16,14 +16,14 @@ export function AddToCartButton({
   return (
     <button
       type="button"
-      className={`ignite ${className}`.trim()}
+      className={`act act-ember ${className}`.trim()}
       onClick={() => {
         addItem(handle);
         setAdded(true);
         window.setTimeout(() => setAdded(false), 1400);
       }}
     >
-      {added ? "On the session" : "Add to session →"}
+      {added ? "Loaded in bay" : "Add to bay"}
     </button>
   );
 }

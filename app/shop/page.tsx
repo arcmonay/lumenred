@@ -9,8 +9,8 @@ import {
 } from "@/lib/products";
 
 export const metadata = {
-  title: "Cabinet",
-  description: "Browse 120+ Lumenred red light therapy systems and accessories.",
+  title: "Catalog",
+  description: "Browse Lumenred red light therapy panels, masks, wraps, and studio systems.",
 };
 
 type Props = {
@@ -30,18 +30,18 @@ export default async function ShopPage({ searchParams }: Props) {
   }
 
   return (
-    <div className="chamber-page">
-      <h1 className="font-display ritual__title" style={{ fontSize: "clamp(2.8rem, 7vw, 4.6rem)", textAlign: "left" }}>
-        The cabinet
-      </h1>
-      <p className="mt-4 mb-10 max-w-md text-[var(--ink-muted)]">
+    <div className="frame">
+      <p className="page-kicker">Full catalog</p>
+      <h1 className="page-title">Equipment bays</h1>
+      <p className="page-lede">
         {products.length} systems
         {collection
           ? ` in ${collections.find((c) => c.handle === collection)?.title ?? collection}`
           : ""}
-        {q ? ` matching “${q}”` : ""}. Specified, not merchandised.
+        {q ? ` matching “${q}”` : ""}. Compare wavelength, LED count, and power
+        class—not adjectives.
       </p>
-      <div className="mb-12">
+      <div className="mt-10">
         <Suspense fallback={<div className="h-12" />}>
           <ShopFilters collections={collections} />
         </Suspense>

@@ -1,15 +1,19 @@
 # Lumenred
 
-Custom red light therapy equipment storefront — Next.js + Shopify-ready catalog.
+Infrared chamber storefront for red / near-infrared therapy equipment — Next.js + Shopify-ready catalog.
 
-**Repo:** https://github.com/arcmonay/lumenred
+**Live:** https://lumenred.vercel.app · **Repo:** https://github.com/arcmonay/lumenred
+
+## Identity
+
+**Chamber Control** — top ember slit, bottom wavelength dock, full-bleed panel gallery with floating purchase HUD. Journey: Panels → Masks → Wraps → Studio → Compare.
 
 ## What’s included
 
-- Brand storefront (home, shop, collections, product pages, cart, science, about)
+- Brand storefront (home, shop, collections, PDP, cart, compare, science, about)
 - **120 product listings** across 8 collections
 - Unique product image for every listing in `public/products/`
-- Shopify Admin import CSV at `data/shopify-products.csv` (includes Image Src URLs)
+- Shopify Admin import CSV at `data/shopify-products.csv`
 - Local catalog at `data/catalog.json`
 - Storefront API helper at `lib/shopify.ts`
 
@@ -20,31 +24,24 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
-
 ## Catalog scripts
 
 ```bash
-npm run images        # generate/update all 120 product images
-npm run catalog:csv   # export CSV (includes image URLs for Shopify)
+npm run images
+npm run catalog:csv
 ```
 
 ## Shopify setup
 
-1. Create a Shopify store (or use an existing one).
-2. **Products → Import** and upload `data/shopify-products.csv` (images pull from GitHub raw URLs after push).
-3. Create a **Storefront API** token.
-5. Copy `.env.example` → `.env.local` and fill:
+1. **Products → Import** `data/shopify-products.csv`
+2. Create a Storefront API token
+3. Copy `.env.example` → `.env.local`:
 
 ```env
 SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
 SHOPIFY_STOREFRONT_TOKEN=...
 ```
 
-6. Deploy this app as a **new** Vercel project pointed at `arcmonay/lumenred`.
+Until credentials are connected, the site runs on the local catalog and browser cart.
 
-Until Shopify credentials are connected, the site runs on the local catalog and browser cart.
-
-## Collections
-
-Full body panels · Desktop panels · Face masks · Targeted wraps · Handheld · Beds & systems · Accessories · Bundles
+© 2025 Lumenred. Not a medical device.
