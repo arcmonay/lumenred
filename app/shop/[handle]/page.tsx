@@ -35,64 +35,49 @@ export default async function ProductPage({ params }: { params: Params }) {
   const collection = getCollection(product.collection);
   const related = getProductsByCollection(product.collection)
     .filter((p) => p.id !== product.id)
-    .slice(0, 5);
+    .slice(0, 4);
   const src = product.image || `/products/${product.handle}.webp`;
 
   return (
-    <>
-      <article className="frame-wide">
+    <div className="page page--soft">
+      <article className="container">
         <div className="pdp">
-          <div className="optics">
+          <div className="pdp-gallery">
             <Image
               src={src}
               alt={product.title}
               fill
               priority
-              sizes="(max-width: 720px) 100vw, 50vw"
+              sizes="(max-width: 900px) 100vw, 55vw"
               className="object-cover"
             />
-            <div className="optics-hud" aria-label="Instrument readouts">
-              <div>
-                <small>Wavelength</small>
-                <strong>{product.wavelength}</strong>
-              </div>
-              <div>
-                <small>LED array</small>
-                <strong>{product.leds || "—"}</strong>
-              </div>
-              <div>
-                <small>Power class</small>
-                <strong>{product.watts ? `${product.watts}W` : "—"}</strong>
-              </div>
-            </div>
           </div>
 
-          <div className="console">
+          <div className="pdp-buy">
             {collection ? (
-              <p className="page-kicker">
+              <p className="section__eyebrow">
                 <Link href={`/collections/${collection.handle}`}>
                   {collection.title}
                 </Link>
               </p>
-            ) : (
-              <p className="page-kicker">Equipment bay</p>
-            )}
+            ) : null}
             <h1>{product.title}</h1>
-            <p className="console__price">
+            <p className="pdp-price">
               {formatMoney(product.price)}
               {product.compareAtPrice ? (
                 <s>{formatMoney(product.compareAtPrice)}</s>
               ) : null}
             </p>
-            <p className="page-lede">{product.description}</p>
+            <p className="pdp-desc">{product.description}</p>
 
-            <ul className="instrument-sheet">
+            <ul className="spec-list">
               {[
+                ["Wavelength", product.wavelength],
+                ["LEDs", String(product.leds || "—")],
+                ["Power class", product.watts ? `${product.watts}W` : "—"],
                 ["Size", product.size],
                 ["Finish", product.finish],
-                ["Weight", `${product.weightLbs} lb`],
                 ["SKU", product.sku],
-                ["Stock", product.inStock ? "In chamber" : "Backordered"],
               ].map(([label, value]) => (
                 <li key={label}>
                   <span>{label}</span>
@@ -101,10 +86,10 @@ export default async function ProductPage({ params }: { params: Params }) {
               ))}
             </ul>
 
-            <div className="mt-2 flex flex-wrap gap-3">
+            <div className="pdp-actions">
               <AddToCartButton handle={product.handle} />
-              <Link href="/compare" className="act act-ghost">
-                Compare specs
+              <Link href="/compare" className="btn btn-secondary">
+                Compare
               </Link>
             </div>
           </div>
@@ -112,16 +97,15 @@ export default async function ProductPage({ params }: { params: Params }) {
       </article>
 
       {related.length ? (
-        <section className="frame">
-          <p className="page-kicker">Same bay</p>
-          <h2 className="page-title" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)" }}>
-            Adjacent systems
+        <section className="container" style={{ marginTop: "3rem" }}>
+          <h2 className="section__title" style={{ maxWidth: "none" }}>
+            You may also like
           </h2>
-          <div className="mt-8">
+          <div style={{ marginTop: "1.5rem" }}>
             <ProductGrid products={related} />
           </div>
         </section>
       ) : null}
-    </>
+    </div>
   );
 }

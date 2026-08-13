@@ -5,13 +5,13 @@ export function ProductGrid({ products }: { products: Product[] }) {
   if (!products.length) {
     return (
       <p className="page-lede">
-        No equipment in this bay. Try another wavelength path or clear filters.
+        No devices match these filters. Try another collection or clear search.
       </p>
     );
   }
 
   return (
-    <div className="equip-list">
+    <div className="product-grid">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}

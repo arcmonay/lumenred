@@ -33,18 +33,20 @@ export default async function CollectionPage({ params }: Props) {
   const products = getProductsByCollection(slug);
 
   return (
-    <div className="frame">
-      <p className="page-kicker">
-        <Link href="/shop">Catalog</Link>
-        {" / "}
-        {collection.title}
-      </p>
-      <h1 className="page-title">{collection.title}</h1>
-      <p className="page-lede">
-        {collection.description} {products.length} systems in this bay.
-      </p>
-      <div className="mt-10">
-        <ProductGrid products={products} />
+    <div className="page">
+      <div className="container">
+        <p className="section__eyebrow">
+          <Link href="/shop">Shop</Link>
+          {" / "}
+          {collection.title}
+        </p>
+        <h1 className="page-title">{collection.title}</h1>
+        <p className="page-lede">
+          {collection.description} {products.length} products.
+        </p>
+        <div style={{ marginTop: "2rem" }}>
+          <ProductGrid products={products} />
+        </div>
       </div>
     </div>
   );

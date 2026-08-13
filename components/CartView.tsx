@@ -10,36 +10,30 @@ export function CartView() {
 
   if (!items.length) {
     return (
-      <div className="max-w-md">
-        <p className="page-lede">Bay is empty. Load a panel, mask, or wrap.</p>
-        <Link href="/shop" className="act act-ember mt-6 inline-flex">
-          Open catalog
+      <div>
+        <p className="page-lede">Your cart is empty.</p>
+        <Link href="/shop" className="btn btn-primary" style={{ marginTop: "1.25rem" }}>
+          Continue shopping
         </Link>
       </div>
     );
   }
 
   return (
-    <div className="grid gap-10 lg:grid-cols-[1.4fr_0.8fr]">
-      <div className="space-y-3">
+    <div className="cart-layout">
+      <div style={{ display: "grid", gap: "0.85rem" }}>
         {items.map(({ product, quantity }) => (
-          <div
-            key={product.handle}
-            className="grid grid-cols-[88px_1fr] gap-4 border border-[var(--line)] bg-[var(--steel)] p-3 sm:grid-cols-[110px_1fr_auto]"
-          >
-            <ProductVisual product={product} className="!aspect-square" />
-            <div className="min-w-0">
-              <Link
-                href={`/shop/${product.handle}`}
-                className="font-display text-base uppercase tracking-tight hover:text-[var(--ember)]"
-              >
-                {product.title}
+          <div key={product.handle} className="cart-line">
+            <ProductVisual product={product} />
+            <div>
+              <Link href={`/shop/${product.handle}`}>
+                <strong style={{ fontWeight: 500 }}>{product.title}</strong>
               </Link>
-              <p className="mt-1 text-sm text-[var(--ash-dim)]">
+              <p style={{ margin: "0.35rem 0 0", color: "var(--muted)" }}>
                 {formatMoney(product.price)}
               </p>
-              <div className="mt-3 flex items-center gap-3">
-                <label className="text-[0.62rem] uppercase tracking-[0.14em] text-[var(--ash-faint)]">
+              <div style={{ marginTop: "0.75rem", display: "flex", gap: "0.75rem", alignItems: "center" }}>
+                <label style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--muted)" }}>
                   Qty
                   <input
                     type="number"
@@ -48,51 +42,56 @@ export function CartView() {
                     onChange={(e) =>
                       setQuantity(product.handle, Number(e.target.value))
                     }
-                    className="ml-2 w-16 border border-[var(--line)] bg-[var(--void)] px-2 py-1 text-sm text-[var(--ash)]"
+                    style={{
+                      marginLeft: "0.5rem",
+                      width: "3.5rem",
+                      border: "1px solid var(--line)",
+                      borderRadius: 4,
+                      padding: "0.35rem 0.4rem",
+                    }}
                   />
                 </label>
                 <button
                   type="button"
                   onClick={() => removeItem(product.handle)}
-                  className="text-xs uppercase tracking-[0.12em] text-[var(--ash-faint)] hover:text-[var(--ember)]"
+                  style={{
+                    fontSize: "0.75rem",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.08em",
+                    color: "var(--muted)",
+                    background: "none",
+                    border: 0,
+                    cursor: "pointer",
+                  }}
                 >
                   Remove
                 </button>
               </div>
             </div>
-            <p className="hidden text-right font-semibold sm:block">
+            <p style={{ fontWeight: 600, textAlign: "right" }} className="hidden sm:block">
               {formatMoney(product.price * quantity)}
             </p>
           </div>
         ))}
       </div>
 
-      <aside
-        className="h-fit border border-[var(--line)] bg-[var(--steel)] p-6 lg:sticky lg:top-6"
-        style={{ borderTopColor: "var(--line-hot)" }}
-      >
-        <h2 className="font-display text-xl uppercase tracking-tight">
-          Bay summary
-        </h2>
-        <div className="mt-6 flex justify-between text-sm">
-          <span className="text-[var(--ash-dim)]">Subtotal</span>
-          <span className="font-semibold">{formatMoney(subtotal)}</span>
+      <aside className="cart-summary">
+        <h2 style={{ margin: 0, fontSize: "1.25rem", fontWeight: 500 }}>Order summary</h2>
+        <div style={{ marginTop: "1.25rem", display: "flex", justifyContent: "space-between" }}>
+          <span style={{ color: "var(--muted)" }}>Subtotal</span>
+          <strong>{formatMoney(subtotal)}</strong>
         </div>
-        <p className="mt-4 text-xs leading-relaxed text-[var(--ash-faint)]">
-          Checkout connects to Shopify once Storefront credentials are set. Until
-          then, bay state is saved locally.
+        <p style={{ marginTop: "1rem", fontSize: "0.82rem", color: "var(--muted)", lineHeight: 1.45 }}>
+          Checkout connects to Shopify once Storefront credentials are set.
         </p>
-        <button type="button" className="act act-ember mt-6 w-full" disabled>
+        <button type="button" className="btn btn-primary" style={{ width: "100%", marginTop: "1.25rem" }} disabled>
           Checkout via Shopify
         </button>
-        <button type="button" onClick={clear} className="act act-ghost mt-3 w-full">
-          Clear bay
+        <button type="button" onClick={clear} className="btn btn-secondary" style={{ width: "100%", marginTop: "0.65rem" }}>
+          Clear cart
         </button>
-        <Link
-          href="/shop"
-          className="mt-4 block text-center text-sm uppercase tracking-[0.12em] text-[var(--ember)]"
-        >
-          Keep browsing
+        <Link href="/shop" style={{ display: "block", textAlign: "center", marginTop: "1rem", fontSize: "0.85rem", color: "var(--ultra)" }}>
+          Keep shopping
         </Link>
       </aside>
     </div>

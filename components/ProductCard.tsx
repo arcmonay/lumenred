@@ -5,22 +5,18 @@ import type { Product } from "@/lib/types";
 
 export function ProductCard({ product }: { product: Product; index?: number }) {
   return (
-    <Link href={`/shop/${product.handle}`} className="equip-row">
-      <div className="equip-row__visual">
-        <ProductVisual product={product} className="!aspect-square !border-0" />
+    <Link href={`/shop/${product.handle}`} className="product-card">
+      <div className="product-card__media">
+        <ProductVisual product={product} className="!aspect-square" />
       </div>
-      <div>
-        <p className="equip-row__title">
-          {product.title.replace("Lumenred ", "")}
+      <div className="product-card__body">
+        <h3>{product.title.replace("Lumenred ", "")}</h3>
+        <p className="product-card__meta">
+          {product.wavelength} · {product.leds} LEDs
+          {product.watts ? ` · ${product.watts}W` : ""}
         </p>
-        <div className="equip-row__specs">
-          <span>{product.wavelength}</span>
-          <span>{product.leds} LEDs</span>
-          <span>{product.watts ? `${product.watts}W` : "—"}</span>
-        </div>
-        <p className="equip-row__price sm:hidden">{formatMoney(product.price)}</p>
+        <p className="product-card__price">{formatMoney(product.price)}</p>
       </div>
-      <p className="equip-row__price hidden sm:block">{formatMoney(product.price)}</p>
     </Link>
   );
 }

@@ -7,22 +7,18 @@ type BrandLogoProps = {
 };
 
 export function BrandLogo({
-  size = 44,
+  size = 40,
   priority = false,
   className = "",
 }: BrandLogoProps) {
   return (
-    <span
-      className={`mark-frame ${className}`.trim()}
-      style={{ ["--mark-size" as string]: `${size}px` }}
-    >
-      <Image
-        src="/logo.png"
-        alt="Lumenred cardinal mark"
-        width={size}
-        height={size}
-        priority={priority}
-      />
-    </span>
+    <Image
+      src="/logo.png"
+      alt="Lumenred"
+      width={size}
+      height={size}
+      priority={priority}
+      className={className}
+    />
   );
 }

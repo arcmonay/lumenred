@@ -16,7 +16,7 @@ export function ProductVisual({
 
   return (
     <div
-      className={`relative aspect-[4/5] overflow-hidden border border-[var(--line)] bg-[var(--steel)] ${className}`}
+      className={`relative aspect-square overflow-hidden bg-[#ececec] ${className}`}
     >
       <Image
         src={src}

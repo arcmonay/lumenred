@@ -1,43 +1,34 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Unbounded } from "next/font/google";
-import { ControlDock } from "@/components/ControlDock";
+import { Space_Grotesk } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { CartProvider } from "@/lib/cart-context";
 import "./globals.css";
 
-const display = Unbounded({
-  variable: "--font-unbounded",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const body = IBM_Plex_Sans({
-  variable: "--font-plex",
+const sans = Space_Grotesk({
+  variable: "--font-space",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Lumenred — Red Light Therapy Equipment",
+    default: "Lumenred — Red Light Therapy Devices",
     template: "%s · Lumenred",
   },
   description:
-    "Infrared chamber equipment for home and studio: panels, masks, wraps, and multi-panel systems. Specified by wavelength, LED count, and power class.",
+    "Red and near-infrared light therapy panels, masks, wraps, and studio systems for home and professional use.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} h-full`}>
+    <html lang="en" className={`${sans.variable} h-full`}>
       <body className="min-h-full antialiased">
         <CartProvider>
-          <div className="lab">
-            <div className="ember-slit" aria-hidden />
+          <div className="site">
             <Header />
-            <main className="lab-stage">{children}</main>
+            <main className="main">{children}</main>
             <Footer />
-            <ControlDock />
           </div>
         </CartProvider>
       </body>

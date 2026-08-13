@@ -1,75 +1,80 @@
 import Image from "next/image";
 import Link from "next/link";
-import { formatMoney, getFeaturedProducts } from "@/lib/products";
+import { formatMoney, getFeaturedProducts, getProducts } from "@/lib/products";
 
 export const metadata = {
   title: "Compare",
-  description:
-    "Compare Lumenred panel specs: wavelength, LED count, power class, and size.",
+  description: "Compare Lumenred panel specs side by side.",
 };
 
 export default function ComparePage() {
-  const panels = getFeaturedProducts(6).filter(
-    (p) => p.collection === "full-body-panels" || p.tags.includes("panel"),
-  );
-  const rows = panels.length >= 3 ? panels.slice(0, 3) : getFeaturedProducts(3);
+  const panels = getProducts()
+    .filter((p) => p.collection === "full-body-panels")
+    .slice(0, 3);
+  const rows = panels.length ? panels : getFeaturedProducts(3);
 
   return (
-    <div className="frame-wide">
-      <p className="page-kicker">Spec match</p>
-      <h1 className="page-title">Compare systems</h1>
-      <p className="page-lede">
-        Line up featured panels by the numbers that matter in a chamber: wavelength,
-        LED density, power class, and footprint.
-      </p>
+    <div className="page page--soft">
+      <div className="container">
+        <p className="section__eyebrow">Buyer&apos;s guide</p>
+        <h1 className="page-title">Compare devices</h1>
+        <p className="page-lede">
+          Line up wavelength, LED count, power class, and size — then open the
+          product page that fits your setup.
+        </p>
 
-      <div className="compare-grid mt-10">
-        {rows.map((product) => (
-          <article key={product.id} className="compare-card">
-            <div className="relative aspect-[4/5] overflow-hidden border border-[var(--line)] bg-[var(--void)]">
-              <Image
-                src={product.image || `/products/${product.handle}.webp`}
-                alt={product.title}
-                fill
-                sizes="(max-width: 720px) 100vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <h3>{product.title.replace("Lumenred ", "")}</h3>
-            <p className="mt-2 text-lg font-semibold">{formatMoney(product.price)}</p>
-            <dl>
-              <div>
-                <dt>Wavelength</dt>
-                <dd>{product.wavelength}</dd>
+        <div className="compare-grid">
+          {rows.map((product) => (
+            <article key={product.id} className="compare-card">
+              <div className="compare-card__media">
+                <Image
+                  src={product.image || `/products/${product.handle}.webp`}
+                  alt={product.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
               </div>
-              <div>
-                <dt>LEDs</dt>
-                <dd>{product.leds}</dd>
+              <div className="compare-card__body">
+                <h3>{product.title.replace("Lumenred ", "")}</h3>
+                <p style={{ margin: "0.5rem 0 0", fontWeight: 600 }}>
+                  {formatMoney(product.price)}
+                </p>
+                <dl>
+                  <div>
+                    <dt>Wavelength</dt>
+                    <dd>{product.wavelength}</dd>
+                  </div>
+                  <div>
+                    <dt>LEDs</dt>
+                    <dd>{product.leds}</dd>
+                  </div>
+                  <div>
+                    <dt>Power class</dt>
+                    <dd>{product.watts}W</dd>
+                  </div>
+                  <div>
+                    <dt>Size</dt>
+                    <dd>{product.size}</dd>
+                  </div>
+                </dl>
+                <Link
+                  href={`/shop/${product.handle}`}
+                  className="btn btn-secondary"
+                  style={{ width: "100%", marginTop: "1rem" }}
+                >
+                  View device
+                </Link>
               </div>
-              <div>
-                <dt>Power class</dt>
-                <dd>{product.watts}W</dd>
-              </div>
-              <div>
-                <dt>Size</dt>
-                <dd>{product.size}</dd>
-              </div>
-              <div>
-                <dt>Finish</dt>
-                <dd>{product.finish}</dd>
-              </div>
-            </dl>
-            <Link href={`/shop/${product.handle}`} className="act act-ghost mt-5 w-full">
-              Open console
-            </Link>
-          </article>
-        ))}
-      </div>
+            </article>
+          ))}
+        </div>
 
-      <div className="mt-10">
-        <Link href="/collections/full-body-panels" className="act act-ember">
-          Browse all panels
-        </Link>
+        <div style={{ marginTop: "2rem" }}>
+          <Link href="/collections/full-body-panels" className="btn btn-primary">
+            Browse all panels
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -9,8 +9,8 @@ import {
 } from "@/lib/products";
 
 export const metadata = {
-  title: "Catalog",
-  description: "Browse Lumenred red light therapy panels, masks, wraps, and studio systems.",
+  title: "Shop",
+  description: "Shop Lumenred red light therapy panels, masks, wraps, and systems.",
 };
 
 type Props = {
@@ -30,23 +30,21 @@ export default async function ShopPage({ searchParams }: Props) {
   }
 
   return (
-    <div className="frame">
-      <p className="page-kicker">Full catalog</p>
-      <h1 className="page-title">Equipment bays</h1>
-      <p className="page-lede">
-        {products.length} systems
-        {collection
-          ? ` in ${collections.find((c) => c.handle === collection)?.title ?? collection}`
-          : ""}
-        {q ? ` matching “${q}”` : ""}. Compare wavelength, LED count, and power
-        class—not adjectives.
-      </p>
-      <div className="mt-10">
+    <div className="page">
+      <div className="container">
+        <h1 className="page-title">Shop devices</h1>
+        <p className="page-lede">
+          {products.length} products
+          {collection
+            ? ` in ${collections.find((c) => c.handle === collection)?.title ?? collection}`
+            : ""}
+          {q ? ` matching “${q}”` : ""}.
+        </p>
         <Suspense fallback={<div className="h-12" />}>
           <ShopFilters collections={collections} />
         </Suspense>
+        <ProductGrid products={products} />
       </div>
-      <ProductGrid products={products} />
     </div>
   );
 }

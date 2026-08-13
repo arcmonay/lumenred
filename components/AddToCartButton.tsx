@@ -16,14 +16,14 @@ export function AddToCartButton({
   return (
     <button
       type="button"
-      className={`act act-ember ${className}`.trim()}
+      className={`btn btn-primary ${className}`.trim()}
       onClick={() => {
         addItem(handle);
         setAdded(true);
         window.setTimeout(() => setAdded(false), 1400);
       }}
     >
-      {added ? "Loaded in bay" : "Add to bay"}
+      {added ? "Added to cart" : "Add to cart"}
     </button>
   );
 }

@@ -22,13 +22,13 @@ export function ShopFilters({ collections }: { collections: Collection[] }) {
 
   return (
     <div>
-      <div className="spectrum-tabs" role="tablist" aria-label="Collections">
+      <div className="filters" role="tablist" aria-label="Collections">
         <button
           type="button"
           className={active === "all" ? "is-on" : ""}
           onClick={() => update({ collection: "all" })}
         >
-          All bays
+          All
         </button>
         {collections.map((c) => (
           <button
@@ -46,9 +46,9 @@ export function ShopFilters({ collections }: { collections: Collection[] }) {
         <input
           type="search"
           defaultValue={q}
-          placeholder="Search wavelength, panel, mask, wrap…"
+          placeholder="Search panels, masks, wraps…"
           onChange={(e) => update({ q: e.target.value })}
-          className="search-rail"
+          className="search-input"
         />
       </label>
     </div>
